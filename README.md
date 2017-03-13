@@ -2,7 +2,9 @@
 
 ## Implementation of SMDP-Q-learning for bottleneck options
 
-I compare several bottleneck-options discovery mechanisms. Training is done in two phases: first, option policies are learning as well as the policy over options as to reach bottleneck states. Then the goal state is moved and the agent has to re-converge. I measure the number of steps needed to re-convergence.
+I compare several bottleneck-options discovery mechanisms.
+
+Training is done in two phases: first, option policies are learned, as well as the policy over options, in order to reach bottleneck states as well as the goal state. Then, the goal state is moved and the agent has to re-converge. I measure the number of steps needed until re-convergence to compare different bottleneck discovery mechanisms.
 
 Here are the mechanisms (all tabular), trained with [SMDP Q-learning](https://webdocs.cs.ualberta.ca/~sutton/papers/SPS-aij.pdf):
 - Normal Q-Learning
